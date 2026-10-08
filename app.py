@@ -7,7 +7,7 @@ st.title("🩺 Symptom to Disease Lookup")
 # Load dataset
 @st.cache_data
 def load_data():
-    return pd.read_csv("main_cleaned_fix.csv")
+    return pd.read_csv("main.csv")
 
 df = load_data()
 symptoms = [col for col in df.columns if col != "prognosis"]
